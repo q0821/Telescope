@@ -1,0 +1,14 @@
+{
+  "sorry_you_cannot_edit_this_comment" : "抱歉, 你無法編輯此留言",
+  "your_comment_has_been_deleted" : "您的留言已被刪除",
+  "comment_" : "留言",
+  "delete_comment" : "刪除留言",
+  "add_comment" : "新增留言",
+  "upvote" : "讚",
+  "downvote" : "爛",
+  "link" : "連結",
+  "edit" : "編輯",
+  "reply" : "回覆",
+  "no_comments" : "沒有任何留言",
+  "please_sign_in_to_reply" : "請先登入再進行回覆"
+}
