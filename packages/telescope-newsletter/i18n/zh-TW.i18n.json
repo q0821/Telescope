@@ -1,0 +1,15 @@
+{
+  "receive_the_best_of" : "Receive the best of",
+  "right_in_your_inbox" : "right in your inbox.",
+  "get_newsletter" : "Get Newsletter",
+  "thanks_for_subscribing" : "感謝訂閱喲!",
+  "newsletter" : "最新消息",
+  "showBanner" : "顯示Banner",
+  "mailChimpAPIKey" : "MailChimp API Key",
+  "mailChimpListId" : "MailChimp List ID",
+  "postsPerNewsletter" : "每則新聞的文章量",
+  "newsletterFrequency" : "新聞頻率",
+  "newsletterTime" : "新聞時間",
+  "enableNewsletter" : "啟用新聞",
+  "autoSubscribe" : "自動訂閱"
+}

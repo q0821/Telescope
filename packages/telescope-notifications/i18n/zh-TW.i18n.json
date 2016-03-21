@@ -1,0 +1,20 @@
+{
+  "a_new_comment_on_your_post" : "您文章有新留言",
+  "you_have_a_new_comment_by" : "新留言: ",
+  "on_your_post" : " 在您的文章",
+  "has_created_a_new_post" : " 發佈了一則新文章",
+  "someone_replied_to_your_comment_on" : "有人回復了您的留言",
+  "no_notifications" : "沒有通知",
+  "1_notification" : "1 則通知",
+  "notifications" : "則通知",
+  "mark_all_as_read" : "全部標記為已讀",
+  "left_a_new_comment_on" : "在您的文章中留下了新的留言",
+  "has_replied_to_your_comment_on" : "在您的留言中留下了新的回復",
+  "mark_as_read" : "標記為已讀",
+  "you_have_been_unsubscribed_from_all_notifications" : "已經取消訂閱",
+  "user_not_found" : "找不到使用者",
+  "notifications_fieldset" : "通知",
+  "emailNotifications" : "Email 通知",
+  "your_post" : "您的貼文",
+  "has_been_approved" : "已通過審核"
+}

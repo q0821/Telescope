@@ -1,0 +1,6 @@
+{
+  "feeds" : "Feeds",
+  "feed_already_exists" : "已存在一個相同Url的Feed",
+  "you_need_to_login_and_be_an_admin_to_add_a_new_feed" : "您必須要是管理者才有辦法新增Feed",
+  "import_new_posts_from_feeds" : "從Feeds匯入新文章"
+}

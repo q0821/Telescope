@@ -1,0 +1,10 @@
+{
+  "categories" : "分類",
+  "add_and_remove_categories" : "新增或移除分類",
+  "all_categories" : "全部",
+  "invalid_category" : "抱歉, 此分類不存在",
+  "categoriesBehavior" : "分類作用",
+  "categories_behavior_one_at_a_time" : "一次選擇單一分類",
+  "categories_behavior_multiple" : "結合多個分類的內容",
+  "hideEmptyCategories" : "隱藏空的分類"
+}
