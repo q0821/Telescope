@@ -1,0 +1,9 @@
+{
+  "customViewLink" : "Custom View Link",
+  "customAdminLink" : "Custom Admin Link",
+  "customPostField" : "My Custom Post Field",
+  "customCommentField" : "My Custom Comment Field",
+  "customUserField" : "My Custom User Field",
+  "customSettingsField" : "My Custom Settings Field",
+  "powered_by_telescope": "由LOLTube開發"
+}

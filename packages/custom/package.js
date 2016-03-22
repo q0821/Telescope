@@ -19,35 +19,35 @@ Package.onUse(function (api) {
   ], ['client', 'server']);
 
   // client & server
-
+  /*
   api.addFiles([
     'lib/custom_fields.js',
     'lib/template_modules.js',
     'lib/email_templates.js',
     'lib/callbacks.js'
   ], ['client', 'server']);
-
+  */
   // client
 
   api.addFiles([
-    'lib/client/templates/hello.html',
-    'lib/client/templates/hello.js',
-    'lib/client/templates/custom_post_title.html',
-    'lib/client/templates/custom_post_title.js',
-    'lib/client/stylesheets/custom.scss',
-    'lib/client/custom_templates.js'
+    'lib/client/templates/custom_footer_code.html',
+    'lib/client/templates/custom_footer_code.js',
+    'lib/client/stylesheets/custom.scss'
   ], ['client']);
 
   // server
 
+  /*
   api.addAssets([
     'lib/server/templates/custom_emailPostItem.handlebars'
   ], ['server']);
+  */
 
   // i18n languages (must come last)
 
   api.addFiles([
-    'i18n/en.i18n.json'
+    'i18n/en.i18n.json',
+    'i18n/zh-TW.i18n.json'
   ], ['client', 'server']);
 
 });
