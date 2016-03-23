@@ -6,9 +6,9 @@ Template.users_dashboard.helpers({
       showFilter: true,
       fields: [
         { key: 'avatar', label: '', tmpl: Template.users_list_avatar, sortable: false },
-        { key: 'createdAt', label: 'Member Since', tmpl: Template.users_list_created_at, sort: 'descending' },
-        { key: 'isAdmin', label: 'Admin', fn: function(val){return val ? 'Yes':'No'} },
-        { key: 'username', label: 'Username', tmpl: Template.users_list_username },
+        { key: 'createdAt', label: __('member_since'), tmpl: Template.users_list_created_at, sort: 'descending' },
+        { key: 'isAdmin', label: __('admin'), fn: function(val){return val ? 'Yes':'No'} },
+        { key: 'username', label: __('username'), tmpl: Template.users_list_username },
         { key: 'telescope.displayName', label: 'Display Name', tmpl: Template.users_list_display_name },
         { key: 'telescope.email', label: 'Email', tmpl: Template.users_list_email },
         { key: 'telescope.postCount', label: 'Posts' },
