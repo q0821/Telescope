@@ -1,0 +1,17 @@
+<template name="zss_posts_list">
+  <div class="posts-wrapper grid">
+    <div class="posts list {{postsLayout}}" aria-live="polite">
+      {{#each postsCursor}}
+
+        {{#if shouldAddAd @index}}
+          {{> ad_300x250}}
+        {{/if}}
+
+        {{> before_post_item}}
+        {{> post_item post=this}}
+        {{> after_post_item}}
+      {{/each}}
+    </div>
+    {{> postsLoadMore}}
+  </div>
+</template>

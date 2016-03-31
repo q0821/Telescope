@@ -68,7 +68,16 @@ Package.onUse(function (api) {
     'lib/client/stylesheets/_other.scss',
     'lib/client/stylesheets/_post_page.scss',
     'lib/client/stylesheets/_accounts.scss',
-    'lib/client/stylesheets/screen.scss'
+    'lib/client/stylesheets/screen.scss',
+
+    // custom item by Shingo
+    'lib/client/templates/posts_list/posts_list.html',
+    'lib/client/templates/posts_list/posts_list.js',
+    'lib/client/templates/advertisement/ad_300x250.html',
+    'lib/client/templates/advertisement/ad_300x250.js',
+
+    // custom stylesheets by Shingo
+    'lib/client/stylesheets/_ad_300x250.scss'
 
 
   ], ['client']);
