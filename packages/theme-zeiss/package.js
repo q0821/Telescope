@@ -75,9 +75,15 @@ Package.onUse(function (api) {
     'lib/client/templates/posts_list/posts_list.js',
     'lib/client/templates/advertisement/ad_300x250.html',
     'lib/client/templates/advertisement/ad_300x250.js',
+    'lib/client/templates/advertisement/ad_728x90.html',
+    'lib/client/templates/comments/comment_reply.html',
+    'lib/client/templates/comments/comment_reply.js',
+    'lib/client/templates/comments/comment_item.html',
+    'lib/client/templates/comments/comment_item.js',
 
     // custom stylesheets by Shingo
-    'lib/client/stylesheets/_ad_300x250.scss'
+    'lib/client/stylesheets/_ad_300x250.scss',
+    'lib/client/stylesheets/_ad_728x90.scss'
 
 
   ], ['client']);

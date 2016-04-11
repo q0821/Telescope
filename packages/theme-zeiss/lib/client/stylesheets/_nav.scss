@@ -113,13 +113,13 @@
       order: 2;
       .logo-text{
         @include small{
-          font-size: 18px;
+          // font-size: 18px;
           a{
             position: static;
           }
         }
         @include medium-large{
-          font-size:24px;
+          // font-size:24px;
         }
       }
     }
@@ -239,7 +239,8 @@ $nav-width: 250px;
 /*================ Logo =================*/
 
 .logo-text{
-  line-height: 1;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 
 /*================ Tagline =================*/

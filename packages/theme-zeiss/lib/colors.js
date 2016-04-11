@@ -19,3 +19,9 @@ Telescope.colorElements.add(".post-title:hover", "accentColor", "color");
 // Telescope.colorElements.add(".post-cate  gory", "secondaryColor", "background-color");
 // Telescope.colorElements.add(".post-category:hover", "accentContrastColor", "color");
 Telescope.colorElements.add(".posts-grid .post-overlay", "secondaryColor", "background-color");
+
+// 728x90 advertisement background
+Telescope.colorElements.add(".adblock", "secondaryContrastColor", "background-color");
+
+// Text color for daily
+Telescope.colorElements.add(".posts-day-heading", "secondaryContrastColor", "color");

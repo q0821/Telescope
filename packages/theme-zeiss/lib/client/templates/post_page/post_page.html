@@ -11,11 +11,17 @@
       <div class="single-post-item">
 
         {{#with video}}
+          <div class="left-ad">
+          </div>
           <div class="post-video">
             <div class="post-video-inner js-video">
               {{{html}}}
             </div>
+            <div class="post-video-inner adblock">
+              {{> ad_728x90}}
+            </div>
           </div>
+          <div class="right-ad"></div>
         {{/with}}
 
         <div class="post-content">
