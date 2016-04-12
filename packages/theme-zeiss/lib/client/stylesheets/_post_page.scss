@@ -100,3 +100,7 @@
     }
   }
 }
+
+.icon-disliked, .icon-notdisliked{
+  transform: rotateY(180deg);
+}

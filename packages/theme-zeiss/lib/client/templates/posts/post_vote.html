@@ -9,8 +9,19 @@
           {{{icon "notliked"}}}
           <span class="sr-only">{{_ "upvote_"}}</span>
         {{/if}}
-        <span class="vote-count"><span>{{upvotes}}</span></span>
       </a>
+      <span class="vote-count"><span>{{upvotes}}</span></span>
+      {{#if enableDownvotes}}
+        <a class="vote-action downvote-link" href="#" title="{{_ "downvote_"}}">
+          {{#if isDisliked}}
+            {{{icon "disliked"}}}
+            <span class="sr-only">{{_ "downvote_"}}</span>
+          {{else}}
+            {{{icon "notdisliked"}}}
+            <span class="sr-only">{{_ "downvote_"}}</span>
+          {{/if}}
+        </a>
+      {{/if}}
     </div>
   </div>
 </template>

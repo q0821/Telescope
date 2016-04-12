@@ -1,5 +1,7 @@
-Telescope.utils.icons.liked = "heart";
-Telescope.utils.icons.notliked = "heart-o";
+Telescope.utils.icons.liked = "thumbs-up";
+Telescope.utils.icons.notliked = "thumbs-o-up";
+Telescope.utils.icons.disliked = "thumbs-down";
+Telescope.utils.icons.notdisliked = "thumbs-o-down";
 
 Telescope.utils.icons.user = "user";
 Telescope.utils.icons.add = "plus";
