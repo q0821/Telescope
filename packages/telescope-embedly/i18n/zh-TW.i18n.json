@@ -7,5 +7,6 @@
   "please_ask_your_admin_to_fill_in_embedly_key" : "請聯絡站長正確的輸入 Embedly API key 來啟用縮圖功能.",
   "embedlyKey" : "Embedly API Key",
   "thumbnailWidth" : "縮圖寬度",
-  "thumbnailHeight" : "縮圖高度"
+  "thumbnailHeight" : "縮圖高度",
+  "go_to_post" : "前往文章"
 }
