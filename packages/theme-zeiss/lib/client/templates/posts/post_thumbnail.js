@@ -4,5 +4,8 @@ Template.post_thumbnail.helpers({
       var duration = moment.duration(this.media.duration, 'seconds');
       return duration.humanize();
     }
+  },
+  youtubeClass: function() {
+    return (this.thumbnailUrl.indexOf('i.ytimg.com')>-1) ? 'youtube-thumb' : '';
   }
 });

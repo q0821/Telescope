@@ -2,7 +2,7 @@
   {{#if thumbnailUrl}}
     <div class="post-thumbnail" aria-hidden="true">
       <a class="post-thumbnail-link" href="{{this.getPageUrl}}">
-        <img class="post-thumbnail-image" src="{{thumbnailUrl}}" onerror="this.style.display='none';" aria-hidden="true"/>
+        <img class="post-thumbnail-image {{youtubeClass}}" src="{{thumbnailUrl}}" onerror="this.style.display='none';" aria-hidden="true"/>
         <!-- {{#if media.duration}}
           <span class="video-duration">{{getDuration}}</span>
         {{/if}} -->

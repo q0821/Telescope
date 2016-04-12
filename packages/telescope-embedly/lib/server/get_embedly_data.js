@@ -23,18 +23,8 @@ getEmbedlyData = function (url) {
       }
     });
 
-    if (!!result.data.images && !!result.data.images.length) { // there may not always be an image
+    if (!!result.data.images && !!result.data.images.length) // there may not always be an image
       result.data.thumbnailUrl = result.data.images[0].url.replace("http:", ""); // add thumbnailUrl as its own property and remove "http"
-      if(result.data.thumbnailUrl.indexOf('i.ytimg.com') > -1) { // the thumbnail is from youtube
-        var youtubeId = result.data.thumbnailUrl.substring(
-          result.data.thumbnailUrl.indexOf('vi%2F') + 5,
-          result.data.thumbnailUrl.indexOf('%2Fhq')
-        );
-        result.data.thumbnailUrl = '//i.ytimg.com/vi/' + youtubeId + '/hqdefault.jpg';
-        console.log('result: ');
-        console.log(result.data);
-      }
-    }
 
     if (result.data.authors && result.data.authors.length > 0) {
       result.data.sourceName = result.data.authors[0].name;
@@ -44,6 +34,19 @@ getEmbedlyData = function (url) {
     // var embedlyData = _.pick(result.data, 'title', 'media', 'description', 'thumbnailUrl', 'sourceName', 'sourceUrl');
     var embedlyData = _.pick(result.data, 'title', 'media', 'thumbnailUrl', 'sourceName', 'sourceUrl');
 
+    if(embedlyData.sourceUrl.indexOf('youtube.com') > -1) { // if the source is from youtube
+
+      var youtubeId = result.data.thumbnailUrl.substring(
+        embedlyData.thumbnailUrl.indexOf('vi%2F') + 5,
+        embedlyData.thumbnailUrl.indexOf('%2Fhq')
+      );
+
+      embedlyData.thumbnailUrl = '//i.ytimg.com/vi/' + youtubeId + '/hqdefault.jpg';
+      embedlyData.media.html = '<iframe class="embedly-embed" width="854" height="480" src="https://www.youtube.com/embed/' + youtubeId + '" scrolling="no" frameborder="0" allowfullscreen></iframe>';
+    }
+
+    //console.log('return:');
+    //console.log(embedlyData);
     return embedlyData;
 
   } catch (error) {
