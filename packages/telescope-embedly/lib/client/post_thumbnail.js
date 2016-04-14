@@ -18,7 +18,7 @@ Template.post_thumbnail.helpers({
 
 Template.post_thumbnail.events({
   'click .post-thumbnail-has-video': function (e, instance) {
-    
+
     e.preventDefault();
     instance.showVideo.set(true);
     

@@ -1,7 +1,7 @@
 <template name="zss_post_thumbnail">
   {{#if thumbnailUrl}}
     <div class="post-thumbnail" aria-hidden="true">
-      <a class="post-thumbnail-link" href="{{this.getPageUrl}}">
+      <a class="post-thumbnail-link {{playVideoClass}}" href="{{this.getPageUrl}}">
         <img class="post-thumbnail-image {{youtubeClass}}" src="{{thumbnailUrl}}" onerror="this.style.display='none';" aria-hidden="true"/>
         <!-- {{#if media.duration}}
           <span class="video-duration">{{getDuration}}</span>
@@ -11,4 +11,17 @@
   {{else}}
     <div class="post-thumbnail-empty"></div>
   {{/if}}
+  {{#with media}}
+    {{#if showVideo}}
+      <div class="post-video-lightbox">
+        <a class="post-video-lightbox-hide" href="#">×</a>
+        <div class="post-video-lightbox-inner js-video">
+          {{{html}}}
+          <div class="ad-728x90">
+            {{> ad_728x90}}
+          </div>
+        </div>
+      </div>
+    {{/if}}
+  {{/with}}
 </template>
