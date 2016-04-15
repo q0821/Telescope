@@ -82,6 +82,8 @@ Package.onUse(function (api) {
     'lib/client/templates/comments/comment_item.js',
     'lib/client/templates/comments/comment_submit.html',
     'lib/client/templates/comments/comment_submit.js',
+    'lib/client/templates/youtube/youtube_api.html',
+    'lib/client/templates/youtube/youtube_api.js',
 
     // custom stylesheets by Shingo
     'lib/client/stylesheets/_ad_300x250.scss',

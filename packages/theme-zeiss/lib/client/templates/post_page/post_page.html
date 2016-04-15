@@ -15,7 +15,12 @@
           </div>
           <div class="post-video">
             <div class="post-video-inner js-video">
-              {{{html}}}
+              {{#if isYoutube}}
+                {{> youtube_api}}
+              {{else}}
+                {{{html}}}
+              {{/if}}
+
             </div>
             <div class="post-video-inner ad-728x90">
               {{> ad_728x90}}

@@ -42,11 +42,10 @@ getEmbedlyData = function (url) {
       );
 
       embedlyData.thumbnailUrl = '//i.ytimg.com/vi/' + youtubeId + '/hqdefault.jpg';
-      embedlyData.media.html = '<iframe class="embedly-embed" width="854" height="480" src="https://www.youtube.com/embed/' + youtubeId + '" scrolling="no" frameborder="0" allowfullscreen></iframe>';
+      //embedlyData.media.html = '<iframe class="embedly-embed" width="854" height="480" src="https://www.youtube.com/embed/' + youtubeId + '" scrolling="no" frameborder="0" allowfullscreen></iframe>';
+      embedlyData.media.html = 'killer@youtube:' + youtubeId;
     }
 
-    //console.log('return:');
-    //console.log(embedlyData);
     return embedlyData;
 
   } catch (error) {

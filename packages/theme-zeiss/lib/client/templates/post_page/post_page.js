@@ -1,10 +1,18 @@
 Template.post_page.helpers({
   video: function () {
-    return this.media && this.media.type === "video" && this.media;
+    var media = this.media;
+    return media && this.media.type === "video" && media;
   },
   showThumbnail: function () {
     return this.thumbnailUrl && !(this.media && this.media.type === "video");
+  },
+  isYoutube: function(){
+    return this.html.indexOf('killer@youtube') > -1;
+  },
+  youtubeId: function(){
+    return 'M7lc1UVf-VE';
   }
+
 });
 
 Template.post_page.onRendered(function () {
@@ -12,6 +20,7 @@ Template.post_page.onRendered(function () {
 
   var post = Posts.findOne(FlowRouter.getParam("_id"));
   $(".body-overlay").css("background-image", "url("+post.thumbnailUrl+")");
+ ;
 });
 
 Template.post_page.onDestroyed(function () {
