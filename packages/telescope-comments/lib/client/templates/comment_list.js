@@ -1,12 +1,12 @@
 Template.comment_list.helpers({
   commentListClass: function () {
     var post = this;
-    var comments = Comments.find({postId: post._id, parentCommentId: null}, {sort: {score: -1, postedAt: -1}});
+    var comments = Comments.find({postId: post._id, parentCommentId: null}, {sort: {postedAt: -1, score: -1, }});
     return !!comments.count() ? "has-comments" : "no-comments";
   },
   childComments: function(){
     var post = this;
-    var comments = Comments.find({postId: post._id, parentCommentId: null}, {sort: {score: -1, postedAt: -1}});
+    var comments = Comments.find({postId: post._id, parentCommentId: null}, {sort: {postedAt: -1, score: -1, }});
     return comments;
   }
 });

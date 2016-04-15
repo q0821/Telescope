@@ -1,9 +1,9 @@
-<template name="zss_comment_reply">
+<template name="zss_comment_submit">
   {{#if canComment}}
     <div class="comment-form comment-new module">
       <h4 class="comment-new-heading">{{_ "add_comment"}}</h4>
-      {{> quickForm collection="Comments" id="replyCommentForm" template="bootstrap3-horizontal"
-      input-col-class="controls" type="method" meteormethod="submitComment" fields=commentFields parentContext=getParentContext}}
+      {{> quickForm collection="Comments" id="submitCommentForm" template="bootstrap3-horizontal"
+      input-col-class="controls" type="method" meteormethod="submitComment" fields=commentFields parentContext=this}}
     </div>
   {{else}}
     {{#if isLoggedIn}}

@@ -80,6 +80,8 @@ Package.onUse(function (api) {
     'lib/client/templates/comments/comment_reply.js',
     'lib/client/templates/comments/comment_item.html',
     'lib/client/templates/comments/comment_item.js',
+    'lib/client/templates/comments/comment_submit.html',
+    'lib/client/templates/comments/comment_submit.js',
 
     // custom stylesheets by Shingo
     'lib/client/stylesheets/_ad_300x250.scss',

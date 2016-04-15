@@ -1,6 +1,6 @@
 {
   "thumbnail" : "縮圖",
-  "thumbnailUrl" : "縮圖Url",
+  "thumbnailUrl" : "縮圖預覽",
   "regenerate_thumbnail" : "重新產生縮圖",
   "clear_thumbnail" : "清除",
   "please_fill_in_embedly_key" : "請管理員輸入 Embedly API key 來啟用縮圖功能",

@@ -77,7 +77,7 @@ Template.comment_item.helpers({
   },
   childComments: function(){
     // return only child comments
-    return Comments.find({parentCommentId: this._id});
+    return Comments.find({parentCommentId: this._id}, {sort: {createdAt: -1}});
   },
   author: function(){
     return Meteor.users.findOne(this.userId);
@@ -104,9 +104,10 @@ Template.comment_item.helpers({
     return this.upvotes === 1 ? i18n.t('point') : i18n.t('points');
   },
   replying: function(id){
-    console.log('replying? ' + Session.get('replying'));
-    console.log(this);
     return (id === Session.get('replying'));
+  },
+  voteCounts: function(){
+    return this.upvotes - this.downvotes;
   }
 });
 
@@ -133,9 +134,7 @@ Template.comment_item.events({
   'click .not-downvoted .downvote': _.partial(handleVoteClick, 'downvoteComment', 'post downvoted'),
   'click .downvoted .downvote': _.partial(handleVoteClick, 'cancelDownvoteComment', 'post downvote cancelled'),
   'click .comment-reply': function(event){
-    console.log(this);
     event.preventDefault();
     Session.set('replying', this._id);
-    console.log(this);
   }
 });

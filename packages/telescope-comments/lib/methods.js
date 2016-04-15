@@ -73,6 +73,7 @@ Meteor.methods({
     // checking might be redundant because SimpleSchema already enforces the schema, but you never know
     check(comment, Comments.simpleSchema());
 
+    console.log(comment);
     // required properties:
     // postId
     // body

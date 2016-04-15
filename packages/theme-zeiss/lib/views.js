@@ -4,3 +4,9 @@ Posts.views.add("short", function (terms) {
     options: {sort: {sticky: -1, score: -1}}
   };
 });
+
+Posts.views.add("nogood", function (terms) {
+  return {
+    options: {sort: {sticky: -1, score: 1}}
+  };
+});

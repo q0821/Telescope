@@ -6,5 +6,8 @@ Template.post_vote.helpers({
   isDisliked: function(){
     var user = Meteor.user();
     return user && user.hasDownvoted(this);
+  },
+  voteCounts: function(){
+    return this.upvotes - this.downvotes;
   }
 });
